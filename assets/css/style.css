@@ -65,3 +65,7 @@ header {
 #menu a:hover {
     border-bottom: 1px solid rgb(181, 5, 15);
 }
+
+section {
+    scroll-margin-top: 60px;
+}
