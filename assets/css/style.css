@@ -69,3 +69,28 @@ header {
 section {
     scroll-margin-top: 60px;
 }
+
+
+/* hero image */
+#hero {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero.jpeg') no-repeat center center;
+}
+
+#cover-text {
+    font-size: 130%;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    bottom: 350px;
+    right: 150px;
+    color: white;
+}
