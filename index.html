@@ -8,14 +8,14 @@
     <meta name="keywords" content="Aberdeen, AFC, football, soccer, london, fans, fan club">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Lon.Dons - Aberdeen FC supporters club in London</title>
+    <title>LonDons - Aberdeen FC fan club in London</title>
 </head>
 
 <body>
     <!-- Menubar -->
     <header>
         <a href="#hero">
-            <h1 id="logo">Lon.Dons</h1>
+            <h1 id="logo">LonDons</h1>
         </a>
 
         <nav id="menu">
@@ -46,8 +46,8 @@
 
         <!-- include a small amount of text identifying the page -->
         <div id="hero-text">
-            <h2>Lon.Dons</h2>
-            <h4>Aberdeen FC supporters club based in London</h4>
+            <h2>LonDons</h2>
+            <h4>Aberdeen FC fan club based in London</h4>
         </div>
         <!-- also should have an arrow at the bottom indicating more content below the fold -->
     </section>
@@ -56,29 +56,33 @@
     <section id="about">
         <!-- a brief history of how the club came to be and what it does now -->
         <div class="about-section about-image-right" id="about-first">
+            <p>We’re the LonDons, an Aberdeen FC supporters club made up of more than 100 fans in the greater 
+                London area. Founded in 2011 by a group of likeminded Dons supporters, we organise meetups to 
+                watch matches, opportunities to socialise with other fans and events to raise money for charity.</p>
             <img src="https://placehold.co/250/000000/FFFFFF/png" alt="First Placeholder About Image">
-            <p>Early stages of the Lon.Dons</p>
         </div>
 
         <div class="about-section about-image-left" id="about-second">
+            <p>We meet for all matches in pubs and organise events around central London, so have a 
+                look at our upcoming events schedule for our next meetup.</p>
             <img src="https://placehold.co/250/000000/FFFFFF/png" alt="Second Placeholder About Image">
-            <p>What the Lon.Dons do now</p>
         </div>
-    </section>
 
-    <!-- Upcoming events -->
-    <section id="upcoming">
-        <!-- shows next event upcoming with details, and dates of further events -->
-        <div class="upcoming-event" id="next-event"></div>
-        <div class="upcoming-event"></div>
-        <div class="upcoming-event"></div>
+        <div class="about-section about-image-right" id="about-third">
+            <p>The LonDons are an inclusive group and family and friends are welcome. We are always looking 
+                for new members, so if you’re interested in joining, fill out the form below to get emails 
+                about our upcoming events, latest news and updates!</p>
+            <img src="https://placehold.co/250/000000/FFFFFF/png" alt="Second Placeholder About Image">
+        </div>
     </section>
 
     <!-- Join the club -->
     <section id="join">
         <!-- a brief section to let users register to the mailing list about events -->
         <form action="https://formdump.codeinstitute.net/" method="post" id="mailing-list-form">
-            <h2>Sign up to hear about upcoming and new Lon.Dons events</h2>
+            <h2>Join the club</h2>
+            <p>If you are interested in joining our group and receiving information about upcoming news and events, fill in the form below.</p>
+            <p>We look forward to seeing you at a future meetup!</p>
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email-mailing-list" class="email-input" required>
@@ -87,11 +91,45 @@
         </form>
     </section>
 
+    <!-- Upcoming events -->
+    <section id="upcoming">
+        <h2>Upcoming LonDons events</h2>
+        
+        <!-- shows next event upcoming with details, and dates of further events -->
+        <div class="upcoming-event" id="next-event">
+            <h3 class="event-title">Queen of the South (A)</h3>
+            <p class="event-when">13 Jul @ 17:30</p>
+            <p class="event-where">
+                <a href="https://www.fourthieves.pub/" target="_blank">Four Thieves</a>
+            </p>
+        </div>
+        <div class="upcoming-event">
+            <h3 class="event-title">East Kilbride (A)</h3>
+            <p class="event-when">20 Jul @ 15:00</p>
+            <p class="event-where">
+                <a href="https://www.crafted-social.co.uk/famous-three-kings-west-kensington" target="_blank">Famous 3 Kings</a>
+            </p>
+        </div>
+        <div class="upcoming-event">
+            <h3 class="event-title">Airdrieonians (H)</h3>
+            <p class="event-when">23 Jul @ 19:45</p>
+            <p class="event-where">
+                <a href="https://www.sportsbarandgrill.co.uk/clapham" target="_blank">Clapham Sports Bar & Grill</a>
+                </p>
+        </div>
+        <div class="upcoming-event">
+            <h3 class="event-title">AFC Community Trust Fundraiser</h3>
+            <p class="event-when">27 Jul @ 11:00</p>
+            <p class="event-where">Clapham Common</p>
+        </div>
+    </section>
+
     <!-- Contact form -->
     <section id="contact">
         <!-- a contact form so users may ask questions of site owner -->
         <form action="https://formdump.codeinstitute.net/" method="post" id="contact-form">
-            <h2>Get in touch to ask us any questions</h2>
+            <h2>Get in touch</h2>
+            <p>If you have any questions or would like to get in touch with a club admin, submit your question or request below.</p>
 
             <label for="fname">Name</label>
             <input type="text" name="fname" id="fname" id="name-contact-form" class="text-input" required>
