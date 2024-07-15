@@ -66,10 +66,6 @@ header {
     border-bottom: 1px solid rgb(181, 5, 15);
 }
 
-section {
-    scroll-margin-top: 60px;
-}
-
 
 /* hero image */
 #hero {
@@ -108,4 +104,50 @@ section {
 #hero-text h2 {
     font-size: 250%;
     margin-bottom: 10px;
+}
+
+
+/* general page content */
+section {
+    scroll-margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+
+/* About */
+#about .about-section {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#about .about-section::After {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#about p {
+    padding: 10px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#about .about-image-right img {
+    float: right;
+    margin-right: 30px;
+}
+#about .about-image-right p {
+    width: 65%;
+    float: left;
+    margin-left: 25px;
+}
+
+#about .about-image-left img {
+    float: left;
+    margin-left: 30px;
+}
+#about .about-image-left p {
+    width: 65%;
+    float: right;
+    text-align: right;
+    margin-right: 25px;
 }
