@@ -81,16 +81,20 @@
     <!-- Join the club -->
     <section id="join">
         <!-- a brief section to let users register to the mailing list about events -->
-        <form action="https://formdump.codeinstitute.net/" method="post" id="mailing-list-form">
-            <h2>Join the club</h2>
-            <p>If you are interested in joining our group and receiving information about upcoming news and events, fill in the form below.</p>
-            <p>We look forward to seeing you at a future meetup!</p>
+        <div class="join-inner">
+            <div class="join-text">
+                <h2>Join the club</h2>
+                <p>If you are interested in joining our group and receiving information about upcoming news and events, fill in the form below.</p>
+                <p>We look forward to seeing you at a future meetup!</p>
+            </div>
+            
+            <form action="https://formdump.codeinstitute.net/" method="post" id="mailing-list-form">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email-mailing-list" class="email-input" required>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email-mailing-list" class="email-input" required>
-
-            <input type="submit" value="Submit" class="submit-btn">
-        </form>
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
     </section>
 
     <!-- Upcoming events -->

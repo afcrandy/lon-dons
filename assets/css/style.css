@@ -111,15 +111,16 @@ header {
 section {
     scroll-margin-top: 60px;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 
 /* About */
 #about .about-section {
     margin-bottom: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
-#about .about-section::After {
+#about .about-section::after {
     content: '';
     clear: both;
     display: block;
@@ -148,6 +149,44 @@ section {
 #about .about-image-left p {
     width: 65%;
     float: right;
-    text-align: right;
     margin-right: 25px;
+}
+
+
+/* Join section */
+#join {
+    margin-left: 25px;
+}
+#join .join-inner::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#join form {
+    float: right;
+    width: 35%;
+    margin-right: 35px;
+}
+#join .join-text {
+    width: 55%;
+    float: left;
+}
+
+
+/* Form elements */
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form input {
+    width: 100%;
+    height: 25px;
+    margin: 10px 20px;
+    border: 1px solid rgb(181, 5, 15);
+    border-radius: 5px;
+}
+form label {
+    margin: 10px 20px;
 }
