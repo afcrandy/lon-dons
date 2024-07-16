@@ -116,6 +116,25 @@ section {
 }
 
 
+/* Form elements */
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+form input {
+    width: 80%;
+    height: 25px;
+    margin: 10px 20px;
+    border: 1px solid rgb(181, 5, 15);
+    border-radius: 5px;
+}
+form label {
+    margin: 10px 20px;
+}
+
+
 /* About */
 #about .about-section {
     margin-bottom: 10px;
@@ -157,37 +176,23 @@ section {
 /* Join section */
 #join {
     margin-left: 25px;
+    background-color: rgb(181, 5, 15);
+    color: white;
+    padding: 35px;
 }
 #join .join-inner::after {
     content: '';
     clear: both;
-    display: block;
+    display: block
 }
 
 #join form {
     float: right;
     width: 35%;
-    margin-right: 35px;
+    padding: 10px;
 }
 #join .join-text {
     width: 55%;
     float: left;
-}
-
-
-/* Form elements */
-form {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-form input {
-    width: 100%;
-    height: 25px;
-    margin: 10px 20px;
-    border: 1px solid rgb(181, 5, 15);
-    border-radius: 5px;
-}
-form label {
-    margin: 10px 20px;
+    padding-left: 20px;
 }
