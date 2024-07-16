@@ -18,12 +18,17 @@ body {
     margin-right: auto;
 }
 
+h2 {
+    margin-bottom: 30px;
+}
+
 
 /* navbar and logo */
 #logo {
     float: left;
     font-size: 150%;
     margin-left: 120px;
+    color: white;
 }
 
 header {
@@ -35,7 +40,7 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid gold;
-    background-color: white;
+    background-color: rgb(181, 5, 15);
     z-index: 1000;
 }
 
@@ -60,7 +65,7 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #menu a:hover {
