@@ -186,7 +186,7 @@ form label {
 
 
 /* Join section */
-#join {
+#join, #contact {
     margin-left: 25px;
     background-color: rgb(181, 5, 15);
     color: white;
@@ -194,21 +194,21 @@ form label {
     border: 1px solid gold;
     border-radius: 5px;
 }
-#join .join-inner * {
+#join .join-inner *, #contact .contact-inner * {
     margin-bottom: 10px;
 }
-#join .join-inner::after {
+#join .join-inner::after, #contact .contact-inner::after {
     content: '';
     clear: both;
     display: block
 }
 
-#join form {
+#join form, #contact form {
     float: right;
     width: 35%;
     padding: 10px;
 }
-#join .join-text {
+#join .join-text, #contact .contact-text {
     width: 55%;
     float: left;
     padding-left: 20px;
