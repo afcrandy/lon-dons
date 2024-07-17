@@ -1,7 +1,19 @@
+/* load font */
+@font-face {
+    font-family: UndergroundNF;
+    src: url(../fonts/UndergroundNF.otf);
+}
+
+
+/* set defaults */
+
 * {
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html {
@@ -26,9 +38,15 @@ h2 {
 /* navbar and logo */
 #logo {
     float: left;
-    font-size: 150%;
+    font-size: 120%;
     margin-left: 120px;
     color: white;
+}
+.brand {
+    font-family: UndergroundNF;
+}
+#logo .brand {
+    font-size: 150%;
 }
 
 header {
@@ -37,8 +55,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 10px 0;
     border-bottom: 1px solid gold;
     background-color: rgb(181, 5, 15);
     z-index: 1000;
@@ -79,6 +96,7 @@ header {
     width: 100%;
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 #hero-image {
@@ -108,8 +126,11 @@ header {
     color: white;
 }
 #hero-text h2 {
-    font-size: 250%;
+    font-size: 220%;
     margin-bottom: 10px;
+}
+#hero-text .brand {
+    font-size: 1.3em;
 }
 
 
