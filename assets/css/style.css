@@ -207,7 +207,7 @@ form label {
 
 /* Join and Contact sections */
 #join, #contact {
-    margin: 0 25px;
+    margin: 0 25px 50px;
     background-color: rgb(181, 5, 15);
     color: white;
     padding: 35px;
@@ -237,4 +237,57 @@ form label {
 #contact textarea {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
+}
+
+
+/* Upcoming events */
+#upcoming {
+    padding: 10px;
+}
+#upcoming::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* #upcoming-events {
+    margin: 25px;
+    position: relative;
+} */
+
+#next-event, #future-events {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 1px solid gold;
+}
+#future-events .upcoming-event:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.upcoming-event {
+    border: 1px solid gold;
+    position: relative;
+}
+#future-events .event-title {
+    float: left;
+    width: 80%;
+}
+#future-events .event-when {
+    float: right;
+}
+.event-when p {
+    text-align: center;
+}
+#future-events .upcoming-event::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#future-events .upcoming-event {
+    padding: 10px;
+}
+
+#next-event h3, #next-event p {
+    text-align: center;
 }
