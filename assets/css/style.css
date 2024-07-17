@@ -30,8 +30,9 @@ body {
     margin-right: auto;
 }
 
-h2 {
+h2.section-heading {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -206,14 +207,14 @@ form label {
 
 /* Join and Contact sections */
 #join, #contact {
-    margin-left: 25px;
+    margin: 0 25px;
     background-color: rgb(181, 5, 15);
     color: white;
     padding: 35px;
     border: 1px solid gold;
     border-radius: 5px;
 }
-#join .join-inner *, #contact .contact-inner * {
+#join .join-inner *:not(h2), #contact .contact-inner *:not(h2) {
     margin-bottom: 10px;
 }
 #join .join-inner::after, #contact .contact-inner::after {
@@ -224,11 +225,11 @@ form label {
 
 #join form, #contact form {
     float: right;
-    width: 35%;
+    width: 40%;
     padding: 10px;
 }
 #join .join-text, #contact .contact-text {
-    width: 55%;
+    width: 50%;
     float: left;
     padding-left: 20px;
 }
