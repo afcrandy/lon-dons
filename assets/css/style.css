@@ -69,7 +69,7 @@ header {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid rgb(181, 5, 15);
+    border-bottom: 1px solid white;
 }
 
 
@@ -150,7 +150,6 @@ form label {
 /* About */
 #about .about-section {
     margin-bottom: 10px;
-    /* padding: 10px; */
 }
 #about .about-section::after {
     content: '';
@@ -160,7 +159,6 @@ form label {
 
 #about p {
     padding: 10px;
-    vertical-align: middle;
     height: 100%;
 }
 
