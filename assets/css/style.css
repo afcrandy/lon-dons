@@ -172,6 +172,10 @@ form label {
 /* About */
 #about .about-section {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
 }
 #about .about-section::after {
     content: '';
@@ -179,29 +183,23 @@ form label {
     display: block;
 }
 
+/* #about .about-section-inner {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 #about p {
     padding: 10px;
     height: 100%;
 }
 
-#about .about-image-right img {
-    float: right;
+#about img {
     margin-right: 30px;
 }
-#about .about-image-right p {
-    width: 65%;
-    float: left;
-    margin-left: 25px;
-}
-
-#about .about-image-left img {
-    float: left;
-    margin-left: 30px;
-}
-#about .about-image-left p {
-    width: 65%;
-    float: right;
-    margin-right: 25px;
+#about p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
