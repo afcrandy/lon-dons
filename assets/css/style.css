@@ -250,16 +250,15 @@ form label {
     display: block;
 }
 
-/* #upcoming-events {
-    margin: 25px;
-    position: relative;
-} */
-
 #next-event, #future-events {
     width: 50%;
     float: left;
     padding: 20px;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
 }
 #future-events .upcoming-event:not(:last-child) {
     margin-bottom: 15px;
@@ -268,13 +267,6 @@ form label {
 .upcoming-event {
     border: 1px solid gold;
     position: relative;
-}
-#future-events .event-title {
-    float: left;
-    width: 80%;
-}
-#future-events .event-when {
-    float: right;
 }
 .event-when p {
     text-align: center;
@@ -285,9 +277,46 @@ form label {
     display: block;
 }
 #future-events .upcoming-event {
-    padding: 10px;
+    padding: 10px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+}
+#future-events .upcoming-inner {
+    flex-grow: 1;
+}
+#future-events .what-where {
+    width: 80%;
+}
+#future-events .upcoming-inner > *:first-child {
+    margin-bottom: 5px;
 }
 
-#next-event h3, #next-event p {
+#next-event .upcoming-event h3, #next-event .upcoming-event p {
     text-align: center;
+    padding: 10px;
+}
+#next-event .upcoming-event h3 {
+    font-size: 2em;
+    flex-grow: 1;
+}
+#next-event .upcoming-event p {
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+#next-event > p {
+    font-size: 110%;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+#next-event > * {
+    flex-grow: 1;
+}
+#next-event .upcoming-event {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    padding: 15px;
 }
