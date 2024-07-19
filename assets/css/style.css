@@ -6,7 +6,6 @@
 
 
 /* set defaults */
-
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: black;
-    margin-top: 60px;
+    margin-top: 50px;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +38,7 @@ h2.section-heading {
 /* navbar and logo */
 #logo {
     float: left;
-    font-size: 120%;
+    font-size: 110%;
     margin-left: 120px;
     color: white;
 }
@@ -47,7 +46,7 @@ h2.section-heading {
     font-family: UndergroundNF;
 }
 #logo .brand {
-    font-size: 150%;
+    font-size: 140%;
 }
 
 header {
@@ -120,10 +119,9 @@ header {
 #hero-text {
     font-size: 130%;
     position: absolute;
-    width: 100%;
-    height: 140px;
     bottom: 0;
-    text-align-last: center;
+    right: 0;
+    left: 0;
     color: white;
 }
 #hero-text h2 {
@@ -133,11 +131,14 @@ header {
 #hero-text .brand {
     font-size: 1.3em;
 }
+#hero-text h4 {
+    margin-bottom: 1em;
+}
 
 
 /* general page content */
 section {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px;
 }
@@ -189,26 +190,10 @@ form label {
     align-items: center;
     justify-content: space-evenly;
 }
-/* #about .about-section::after {
-    content: '';
-    clear: both;
-    display: block;
-} */
-
-/* #about .about-section-inner {
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 #about p {
     padding: 10px;
     width: 50%;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-}
-
-#about img {
-    /* margin-right: 30px; */
 }
 
 
