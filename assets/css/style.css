@@ -153,6 +153,7 @@ form {
 }
 form input, form textarea, form button {
     width: 90%;
+    font-size: 1em;
     margin: 10px 20px;
     padding: 5px 10px;
     border: 1px solid rgb(181, 5, 15);
@@ -164,9 +165,6 @@ form input, form textarea, form button {
 form input, form button {
     height: 35px;
     padding: 5px 10px;
-}
-form label {
-    margin: 10px 20px;
 }
 
 
@@ -223,7 +221,7 @@ form label {
 #join .join-text, #contact .contact-text {
     width: 50%;
     float: left;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 #contact textarea {
@@ -246,7 +244,6 @@ form label {
     width: 50%;
     float: left;
     padding: 20px;
-    /* border: 1px solid gold; */
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -314,4 +311,17 @@ form label {
     flex-direction: column;
     -ms-flex-direction: column;
     padding: 15px;
+}
+
+
+/* form label hiding class courtesy of 'https://www.w3.org/WAI/tutorials/forms/labels/' */
+form label {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
