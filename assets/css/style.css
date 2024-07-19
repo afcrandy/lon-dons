@@ -170,18 +170,30 @@ form label {
 
 
 /* About */
+#about {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+}
+
 #about .about-section {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
-#about .about-section::after {
+/* #about .about-section::after {
     content: '';
     clear: both;
     display: block;
-}
+} */
 
 /* #about .about-section-inner {
     margin-left: auto;
@@ -190,16 +202,13 @@ form label {
 
 #about p {
     padding: 10px;
-    height: 100%;
+    width: 50%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 #about img {
-    margin-right: 30px;
-}
-#about p {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-right: 30px; */
 }
 
 
@@ -306,8 +315,11 @@ form label {
 }
 #next-event > p {
     font-size: 110%;
-    padding: 10px 15px;
-    font-weight: 400;
+    padding: 10px 0;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #next-event > * {
     flex-grow: 1;
