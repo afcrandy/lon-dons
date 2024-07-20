@@ -29,6 +29,10 @@ body {
     margin-right: auto;
 }
 
+.brand {
+    font-family: UndergroundNF;
+}
+
 h2.section-heading {
     margin-bottom: 30px;
     text-align: center;
@@ -36,29 +40,31 @@ h2.section-heading {
 
 
 /* navbar and logo */
-#logo {
-    float: left;
-    font-size: 110%;
-    margin-left: 120px;
-    color: white;
-}
-.brand {
-    font-family: UndergroundNF;
-}
-#logo .brand {
-    font-size: 140%;
-}
-
 header {
     clear: both;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 200px;
     border-bottom: 1px solid gold;
     background-color: rgb(181, 5, 15);
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    /* float: left; */
+    font-size: 110%;
+    /* margin-left: 120px; */
+    color: white;
+    text-decoration: none;
+}
+#logo .brand {
+    font-size: 140%;
 }
 
 #menu {
@@ -69,8 +75,8 @@ header {
 }
 
 #menu ul {
-    float: right;
-    margin-right: 100px;
+    /* float: right; */
+    /* margin-right: 100px; */
     padding-top: 5px;
 }
 
@@ -80,7 +86,7 @@ header {
     display: inline-block;
 }
 
-#menu a {
+header a {
     text-decoration: none;
     color: white;
 }
@@ -187,6 +193,8 @@ form input, form button {
     -ms-flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
 #about p {
@@ -324,4 +332,85 @@ form label {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+    body {
+        max-width: 95%;
+    }
+
+    #logo {
+        margin-left: 20px;
+    }
+
+    #menu ul {
+        margin-right: 10px;
+    }
+
+    #menu li {
+        margin-right: 10px;
+    }
+
+    #hero, #hero-image {
+        height: 550px;
+    }
+
+    #join form, #contact form {
+        width: 50%;
+    }
+    #join .join-text, #contact .contact-text {
+        padding: 10px;
+    }
+
+    #next-event .upcoming-event h3 {
+        font-size: 1.5em;
+    }
+    #next-event .upcoming-event p {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #hero {
+        max-height: 400px;
+    }
+    #hero-image {
+        background: url('../images/hero 400x400.jpg') no-repeat center center;
+        max-width: 600px;
+        max-height: 400px;
+    }
+    #hero-text {
+        font-size: 110%;
+    }
+    #hero-text h2 {
+        font-size: 170%;
+    }
+    #about {
+        padding: 15px;
+    }
+    #about h2 {
+        margin-bottom: 10px;
+    }
+    #about p {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    #join, #contact {
+        padding: 15px;
+    }
+    #join form, #contact form, #join .join-text, #contact .contact-text {
+        width: 100%;
+    }
+    form input, form textarea, form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #next-event, #future-events {
+        width: 100%;
+    }
+    #upcoming .section-heading {
+        margin-bottom: 5px;
+    }
 }
