@@ -34,6 +34,7 @@ body {
 }
 
 section {
+    /* so that scrolling to page element doesn't get covered by the nav bar */
     scroll-margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px;
@@ -54,7 +55,7 @@ header {
     padding: 10px 200px;
     border-bottom: 1px solid gold;
     background-color: rgb(181, 5, 15);
-    z-index: 1000;
+    z-index: 1000;  /* to keep nav bar over the hero image */
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
@@ -137,6 +138,7 @@ header a {
     bottom: 0;
     right: 0;
     left: 0;
+    /* above 3 lines make sure element fills the full width of container */
     color: white;
 }
 #hero-text h2 {
@@ -209,6 +211,8 @@ form input, form button {
 #join .join-inner *:not(h2), #contact .contact-inner *:not(h2) {
     margin-bottom: 10px;
 }
+/* make sure floated elements don't extend outside of the parent courtesy of W3Schools
+   https://www.w3schools.com/howto/howto_css_clearfix.asp */
 #join .join-inner::after, #contact .contact-inner::after {
     content: '';
     clear: both;
