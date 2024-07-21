@@ -118,3 +118,4 @@ You can break the credits section up into Content and Media, depending on what y
 - The linear-gradient over the landing page image to improve contrast was inspired by the [England Supporters Travel Club page](https://www.englandfootball.com/england/mens-senior-team/England-Supporters-Travel-Club)
 - The code to toggle visibility for the collapsible navigation menu on smaller screens was adapted from [this CodeBurst article](https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390)
 - The code to hide form labels without impacting accessbility was provided by the [Web Accessibility Initiative](https://www.w3.org/WAI/tutorials/forms/labels/#note-on-hiding-elements)
+- Font created by Nick Curtis and hosted at 1001fonts, called [UNderground NF Regular](https://www.1001fonts.com/underground-font.html)
