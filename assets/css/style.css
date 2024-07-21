@@ -421,6 +421,12 @@ form label {
     #menu-trigger:checked ~ ul {
         display: block;
     }
+    #menu-trigger:checked ~ label .fa-bars, #menu-trigger ~label .fa-xmark {
+        display: none;
+    }
+    #menu-trigger ~ label .fa-bars, #menu-trigger:checked ~label .fa-xmark {
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width: 600px) {
