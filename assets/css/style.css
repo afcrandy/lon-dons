@@ -386,6 +386,19 @@ form label {
     }
 }
 
+@media only screen and (max-width: 700) {
+    form input, form textarea, form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #next-event, #future-events {
+        width: 100%;
+    }
+    #upcoming .section-heading {
+        margin-bottom: 5px;
+    }
+}
+
 /* below media query makes the nav menu collapsible on smaller screens; code adapted from
    https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 */
 @media only screen and (max-width: 675px) {
@@ -466,16 +479,6 @@ form label {
     }
     #join form, #contact form, #join .join-text, #contact .contact-text {
         width: 100%;
-    }
-    form input, form textarea, form button {
-        width: 100%;
-        margin: 10px 0;
-    }
-    #next-event, #future-events {
-        width: 100%;
-    }
-    #upcoming .section-heading {
-        margin-bottom: 5px;
     }
 }
 
