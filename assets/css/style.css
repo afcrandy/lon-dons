@@ -115,7 +115,7 @@ header a {
 #hero-image {
     height: 100%;
     width: 100%;
-    background: url('../images/hero image.jpg') no-repeat center center;
+    background: url('../images/hero-image.jpg') no-repeat center center;
     background-size: 100%;
 }
 
@@ -359,7 +359,7 @@ form label {
         height: 550px;
     }
     #hero-image {
-        background: url('../images/hero image (1290x761).jpg') no-repeat center center;
+        background: url('../images/hero-image-1290x761.jpg') no-repeat center center;
     }
 
     #join form, #contact form {
@@ -379,7 +379,7 @@ form label {
 
 @media only screen and (max-width: 1100px) {
     #hero-image {
-        background: url('../images/hero image (1186x700).jpg') no-repeat center center;
+        background: url('../images/hero-image-1186x700.jpg') no-repeat center center;
     }
 }
 
@@ -434,7 +434,7 @@ form label {
         max-height: 400px;
     }
     #hero-image {
-        background: url('../images/hero image (677x508).jpg') no-repeat center center;
+        background: url('../images/hero-image-677x508.jpg') no-repeat center center;
         max-width: 600px;
         max-height: 400px;
     }
@@ -476,6 +476,6 @@ form label {
 
 @media only screen and (max-width: 500px) {
     #hero-image {
-        background: url('../images/hero image (538x404).jpg') no-repeat center center;
+        background: url('../images/hero-image-538x404.jpg') no-repeat center center;
     }
 }
