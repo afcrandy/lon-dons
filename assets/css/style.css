@@ -119,6 +119,8 @@ header a {
     background-size: 100%;
 }
 
+/* styling of .hero-overlay-gradient adapted from
+   https://www.englandfootball.com/england/mens-senior-team/England-Supporters-Travel-Club */
 .hero-overlay-gradient {
     background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 55%, rgba(34, 34, 34, 0.9) 80%);
     bottom: 0;
@@ -317,7 +319,8 @@ form input, form button {
 }
 
 
-/* accessible form label hiding class courtesy of 'https://www.w3.org/WAI/tutorials/forms/labels/' */
+/* accessible form label hiding class courtesy of
+   https://www.w3.org/WAI/tutorials/forms/labels/ */
 form label {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -383,6 +386,8 @@ form label {
     }
 }
 
+/* below media query makes the nav menu collapsible on smaller screens; code adapted from
+   https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 */
 @media only screen and (max-width: 675px) {
     #logo {
         margin-left: 0;
