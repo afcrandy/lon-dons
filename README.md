@@ -82,7 +82,7 @@ You should also mention in this section any interesting bugs or problems you dis
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the officia [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fafcrandy.github.io%2Flon-dons%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fafcrandy.github.io%2Flon-dons%2F)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fafcrandy.github.io%2Flon-dons%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - Accessibility
