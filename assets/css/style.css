@@ -33,6 +33,12 @@ body {
     font-family: UndergroundNF;
 }
 
+section {
+    scroll-margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
 h2.section-heading {
     margin-bottom: 30px;
     text-align: center;
@@ -41,7 +47,6 @@ h2.section-heading {
 
 /* navbar and logo */
 header {
-    clear: both;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +61,6 @@ header {
     justify-content: space-between;
     align-items: stretch;
 }
-
 header a {
     text-decoration: none;
     color: white;
@@ -78,11 +82,7 @@ header a {
     -ms-flex-direction: column;
     justify-content: center;
 }
-
-#menu-trigger {
-    display: none;
-}
-#menu-trigger-label {
+#menu-trigger, #menu-trigger-label {
     display: none;
 }
 
@@ -91,15 +91,13 @@ header a {
     flex-direction: row;
     -ms-flex-direction: row;
 }
-
 #menu li {
     list-style-type: none;
     border-bottom: 1px solid rgb(181, 5, 15);
 }
-#menu a:not(:last-child) li {
+#menu li:not(:last-child) {
     margin-right: 20px;
 }
-
 #menu li:hover {
     border-bottom: 1px solid white;
 }
@@ -122,7 +120,7 @@ header a {
 }
 
 .hero-overlay-gradient {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.9) 90%);
+    background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 50%, rgba(34, 34, 34, 0.9) 80%);
     bottom: 0;
     content: '';
     display: block;
@@ -148,38 +146,6 @@ header a {
 }
 #hero-text h4 {
     margin-bottom: 1em;
-}
-
-
-/* general page content */
-section {
-    scroll-margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px;
-}
-
-
-/* Form elements */
-form {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
-form input, form textarea, form button {
-    width: 90%;
-    font-size: 1em;
-    margin: 10px 20px;
-    padding: 5px 10px;
-    border: 1px solid rgb(181, 5, 15);
-    border-radius: 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-form input, form button {
-    height: 35px;
-    padding: 5px 10px;
 }
 
 
@@ -213,6 +179,23 @@ form input, form button {
 
 
 /* Join and Contact sections */
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+form input, form textarea, form button {
+    width: 90%;
+    font-size: 1em;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(181, 5, 15);
+    border-radius: 5px;
+}
+form input, form button {
+    height: 35px;
+    padding: 5px 10px;
+}
+
 #join, #contact {
     margin: 0 25px 50px;
     background-color: rgb(181, 5, 15);
@@ -233,6 +216,8 @@ form input, form button {
 #join form, #contact form {
     float: right;
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
 }
 #join .join-text, #contact .contact-text {
@@ -318,6 +303,7 @@ form input, form button {
     font-weight: 600;
     display: flex;
     flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
 }
 #next-event > * {
@@ -331,10 +317,10 @@ form input, form button {
 }
 
 
-/* form label hiding class courtesy of 'https://www.w3.org/WAI/tutorials/forms/labels/' */
+/* accessible form label hiding class courtesy of 'https://www.w3.org/WAI/tutorials/forms/labels/' */
 form label {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
