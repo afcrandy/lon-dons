@@ -386,11 +386,7 @@ form label {
     }
 }
 
-@media only screen and (max-width: 700) {
-    form input, form textarea, form button {
-        width: 100%;
-        margin: 10px 0;
-    }
+@media only screen and (max-width: 700px) {
     #next-event, #future-events {
         width: 100%;
     }
@@ -479,6 +475,10 @@ form label {
     }
     #join form, #contact form, #join .join-text, #contact .contact-text {
         width: 100%;
+    }
+    form input, form textarea, form button {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
